@@ -3,40 +3,6 @@ import { useRouter } from 'next/router';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import appConfig from '../config.json';
 
-function GlobalStyles() {
-    return (
-        <style global jsx>{`
-       * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-      }
-
-      body {
-        font-family:  Ubunto, sans-serif;
-      }
-
-      html, body, #__next {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        flex: 1;
-      }
-
-      #__next {
-        flex: 1;
-      }
-
-      #__next > * {
-        flex: 1;
-      }
-
-        `}
-        </style>
-    );
-}
-
 function Title(props) {
     const Tag = props.tag || 'h1';
 
